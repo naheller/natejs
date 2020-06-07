@@ -13,9 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-type ImageProps = {}
-
-const Image: React.FC<ImageProps> = () => {
+const Image: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "nate.jpg" }) {
