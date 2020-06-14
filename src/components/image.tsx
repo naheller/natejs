@@ -30,6 +30,7 @@ const Image: React.FC = () => {
     <Img
       fixed={data.placeholderImage.childImageSharp.fixed}
       className="border-2 border-orange-400 rounded-full"
+      title="Nathan Heller"
     />
   )
 }

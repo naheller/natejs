@@ -37,6 +37,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
             <SocialLink type="linkedIn" color="#f6ad55" />
             <SocialLink type="twitter" color="#f6ad55" />
             <SocialLink type="instagram" color="#f6ad55" />
+            <SocialLink type="email" color="#f6ad55" />
           </div>
         </div>
       </div>
