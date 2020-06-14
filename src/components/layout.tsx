@@ -24,9 +24,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   // `)
 
   return (
-    <>
-      <main>{children}</main>
-    </>
+    <div className="h-screen bg-gray-800">
+      <main className="container mx-auto h-full">{children}</main>
+    </div>
   )
 }
 

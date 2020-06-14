@@ -18,15 +18,20 @@ const Image: React.FC = () => {
     query {
       placeholderImage: file(relativePath: { eq: "nate.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 175, height: 175) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img
+      fixed={data.placeholderImage.childImageSharp.fixed}
+      className="border-2 border-orange-400 rounded-full"
+    />
+  )
 }
 
 export default Image
