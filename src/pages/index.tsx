@@ -26,7 +26,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
               <span>I'm </span>
               <span className="font-bold">Nathan Heller</span>
               <span>
-                , a UI engineer with a focus in mobile-first design principles.
+                , a UI Engineer with a focus in mobile-first design principles.
                 I like to think big and start small. My favorite tools are
                 React, Redux, TypeScript, and GraphQL.
               </span>
